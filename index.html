@@ -35,6 +35,23 @@
                     <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
                 </div>
             </div>
+
+            <div class="mobile-menu-btn">
+    <i class='bx bx-menu'></i>
+</div>
+
+<nav class="mobile-nav">
+    <ul>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <div class="social-icons-mobile">
+            <a href="https://github.com/Wedrock"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
+        </div>
+    </ul>
+</div>
         </header>
 
         <section class="hero" id="home" data-aos="fade">
@@ -291,5 +308,39 @@
             });
         });
     </script>
+    <script>
+// Adicione isso ao seu script existente
+document.addEventListener('DOMContentLoaded', function() {
+    // ... seu código existente ...
+    
+    // Menu mobile
+    const menuBtn = document.querySelector('.mobile-menu-btn');
+    const mobileNav = document.querySelector('.mobile-nav');
+    const overlay = document.createElement('div');
+    overlay.className = 'mobile-nav-overlay';
+    document.body.appendChild(overlay);
+    
+    menuBtn.addEventListener('click', function() {
+        mobileNav.classList.toggle('active');
+        overlay.classList.toggle('active');
+        document.body.classList.toggle('menu-open');
+    });
+    
+    overlay.addEventListener('click', function() {
+        mobileNav.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.classList.remove('menu-open');
+    });
+    
+    // Fechar o menu ao clicar em um link
+    document.querySelectorAll('.mobile-nav a').forEach(link => {
+        link.addEventListener('click', function() {
+            mobileNav.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.classList.remove('menu-open');
+        });
+    });
+});
+</script>
 </body>
 </html>
