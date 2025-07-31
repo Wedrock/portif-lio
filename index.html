@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
+    <title>Portfólio João Pedro</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
@@ -11,10 +11,11 @@
 <body>
     <div class="container">
         <!-- Vídeo de Fundo -->
-        <video class="back-vid" autoplay loop muted plays-inline>
+        <video class="back-vid" autoplay loop muted playsinline>
             <source src="videos/galaxy.mp4" type="video/mp4">
         </video>
 
+        <!-- Cabeçalho -->
         <header data-aos="fade-down">
             <div class="header-content">
                 <div class="logo">
@@ -36,29 +37,31 @@
                 </div>
             </div>
 
+            <!-- Botão do Menu Mobile -->
             <div class="mobile-menu-btn">
-    <i class='bx bx-menu'></i>
-</div>
-
-<nav class="mobile-nav">
-    <ul>
-        <li><a href="#about">Sobre</a></li>
-        <li><a href="#skills">Habilidades</a></li>
-        <li><a href="#projects">Projetos</a></li>
-        <div class="social-icons-mobile">
-            <a href="https://github.com/Wedrock"><i class='bx bxl-github'></i></a>
-            <a href="https://www.linkedin.com/"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
-        </div>
-    </ul>
-</div>
+                <i class='bx bx-menu'></i>
+            </div>
         </header>
 
+        <!-- Menu Mobile -->
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li class="social-icons-mobile">
+                    <a href="https://github.com/Wedrock"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="mobile-nav-overlay"></div>
+
+        <!-- Seção Hero -->
         <section class="hero" id="home" data-aos="fade">
             <div class="hero-content">
                 <div class="hero-text" data-aos="fade-right">
-                    <div class="badge">
-                    </div>
                     <h1>Transformando ideias em <span class="highlight">realidade digital</span></h1>
                     <p>Sou João Pedro D'Anjour, estudante de Informática no CENEP e bolsista voluntário no projeto CSA-IFRN</p>
                 </div>
@@ -70,6 +73,7 @@
             </div>
         </section>
 
+        <!-- Seção Sobre -->
         <section class="about-section" id="about">
             <div class="section-header" data-aos="fade-up">
                 <h2>Sobre Mim</h2>
@@ -100,6 +104,7 @@
             </div>
         </section>
 
+        <!-- Seção Habilidades -->
         <section class="skills-section" id="skills">
             <div class="section-header" data-aos="fade-up">
                 <h2>Minhas Habilidades</h2>
@@ -139,16 +144,17 @@
             </div>
         </section>
 
+        <!-- Seção Projetos -->
         <section class="projects-section" id="projects">
             <div class="section-header" data-aos="fade-up">
                 <h2>Meus Projetos</h2>
                 <div class="divider"></div>
             </div>
-
             <div class="projects-container">
+                <!-- Prática 1 -->
                 <div class="project-card" data-aos="fade-up">
                     <div class="project-media">
-                        <video loop muted plays-inline>
+                        <video loop muted playsinline>
                             <source src="videos/video1.mp4" type="video/mp4">
                         </video>
                     </div>
@@ -165,9 +171,10 @@
                     </div>
                 </div>
 
+                <!-- Prática 2 -->
                 <div class="project-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="project-media">
-                        <video loop muted plays-inline>
+                        <video loop muted playsinline>
                             <source src="videos/video2.mp4" type="video/mp4">
                         </video>
                     </div>
@@ -184,15 +191,16 @@
                     </div>
                 </div>
 
+                <!-- Prática 3 -->
                 <div class="project-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="project-media">
-                        <video loop muted plays-inline>
+                        <video loop muted playsinline>
                             <source src="videos/video3.mp4" type="video/mp4">
                         </video>
                     </div>
                     <div class="project-info">
                         <h3>Prática 3</h3>
-                        <p>Página de acessibilidades</p>
+                        <p>Página de acessibilidade</p>
                         <div class="project-techs">
                             <span>HTML</span>
                             <span>CSS</span>
@@ -203,10 +211,11 @@
                         </a>
                     </div>
                 </div>
-                 <div class="projects-container">
-                <div class="project-card" data-aos="fade-up">
+
+                <!-- Prática 4 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="project-media">
-                        <video loop muted plays-inline>
+                        <video loop muted playsinline>
                             <source src="videos/video4.mp4" type="video/mp4">
                         </video>
                     </div>
@@ -223,16 +232,17 @@
                         </a>
                     </div>
                 </div>
-                 <div class="projects-container">
-                <div class="project-card" data-aos="fade-up">
+
+                <!-- Prática 5 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
                     <div class="project-media">
-                        <video loop muted plays-inline>
+                        <video loop muted playsinline>
                             <source src="videos/video5.mp4" type="video/mp4">
                         </video>
                     </div>
                     <div class="project-info">
                         <h3>Prática 5</h3>
-                        <p>Site sobre os direitos trabalhistas</p>
+                        <p>Site sobre direitos trabalhistas</p>
                         <div class="project-techs">
                             <span>HTML</span>
                             <span>CSS</span>
@@ -246,6 +256,7 @@
             </div>
         </section>
 
+        <!-- Rodapé -->
         <footer>
             <div class="footer-content">
                 <div class="footer-info" data-aos="fade-up">
@@ -280,6 +291,7 @@
         </footer>
     </div>
 
+    <!-- Scripts -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -292,10 +304,10 @@
             });
             
             // Configura o IntersectionObserver para os vídeos
-            const observer = new IntersectionObserver((entries) => {
+            const videoObserver = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                        entry.target.play();
+                        entry.target.play().catch(e => console.log("Video autoplay prevented:", e));
                     } else {
                         entry.target.pause();
                     }
@@ -304,43 +316,61 @@
 
             // Observa todos os vídeos dos projetos
             document.querySelectorAll('.project-media video').forEach(video => {
-                observer.observe(video);
+                video.setAttribute('muted', '');
+                videoObserver.observe(video);
             });
+
+            // Controle do menu mobile
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            const mobileNav = document.querySelector('.mobile-nav');
+            const overlay = document.querySelector('.mobile-nav-overlay');
+            
+            function toggleMenu() {
+                mobileNav.classList.toggle('active');
+                overlay.classList.toggle('active');
+                document.body.classList.toggle('menu-open');
+            }
+            
+            function closeMenu() {
+                mobileNav.classList.remove('active');
+                overlay.classList.remove('active');
+                document.body.classList.remove('menu-open');
+            }
+            
+            menuBtn.addEventListener('click', toggleMenu);
+            overlay.addEventListener('click', closeMenu);
+            
+            // Fechar o menu ao clicar em um link
+            document.querySelectorAll('.mobile-nav a').forEach(link => {
+                link.addEventListener('click', closeMenu);
+            });
+
+            // Ajuste responsivo do padding do hero
+            function adjustHeroPadding() {
+                const header = document.querySelector('header');
+                const hero = document.querySelector('.hero');
+                
+                if (window.innerWidth <= 768) {
+                    const headerHeight = header.offsetHeight;
+                    hero.style.paddingTop = `${headerHeight + 20}px`;
+                } else {
+                    hero.style.paddingTop = '';
+                }
+            }
+
+            // Debounce para o evento resize
+            let resizeTimeout;
+            function handleResize() {
+                clearTimeout(resizeTimeout);
+                resizeTimeout = setTimeout(() => {
+                    adjustHeroPadding();
+                }, 100);
+            }
+
+            // Inicialização
+            adjustHeroPadding();
+            window.addEventListener('resize', handleResize);
         });
     </script>
-    <script>
-// Adicione isso ao seu script existente
-document.addEventListener('DOMContentLoaded', function() {
-    // ... seu código existente ...
-    
-    // Menu mobile
-    const menuBtn = document.querySelector('.mobile-menu-btn');
-    const mobileNav = document.querySelector('.mobile-nav');
-    const overlay = document.createElement('div');
-    overlay.className = 'mobile-nav-overlay';
-    document.body.appendChild(overlay);
-    
-    menuBtn.addEventListener('click', function() {
-        mobileNav.classList.toggle('active');
-        overlay.classList.toggle('active');
-        document.body.classList.toggle('menu-open');
-    });
-    
-    overlay.addEventListener('click', function() {
-        mobileNav.classList.remove('active');
-        overlay.classList.remove('active');
-        document.body.classList.remove('menu-open');
-    });
-    
-    // Fechar o menu ao clicar em um link
-    document.querySelectorAll('.mobile-nav a').forEach(link => {
-        link.addEventListener('click', function() {
-            mobileNav.classList.remove('active');
-            overlay.classList.remove('active');
-            document.body.classList.remove('menu-open');
-        });
-    });
-});
-</script>
 </body>
 </html>
