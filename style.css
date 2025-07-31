@@ -449,3 +449,145 @@ footer {
     transform: translateY(0);
     opacity: 1;
 }
+
+/* ==================== RESPONSIVIDADE ==================== */
+
+@media (max-width: 1024px) {
+    .hero-text h1 {
+        font-size: 32px;
+    }
+    
+    .hero-text p {
+        font-size: 16px;
+    }
+    
+    .profile-circle {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .section-header h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 900px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-text {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    .project-card {
+        flex-direction: column;
+    }
+    
+    .project-media, .project-info {
+        width: 100%;
+    }
+    
+    .project-media {
+        min-height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .desktop-nav ul {
+        gap: 15px;
+    }
+    
+    .hero {
+        padding: 150px 20px 50px;
+    }
+    
+    .profile-circle {
+        width: 250px;
+        height: 250px;
+    }
+    
+    section {
+        padding: 60px 20px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer-info, 
+    .footer-links, 
+    .footer-contact {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .footer-links ul {
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo h1 {
+        font-size: 20px;
+    }
+    
+    .desktop-nav ul {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .hero-text h1 {
+        font-size: 28px;
+    }
+    
+    .section-header h2 {
+        font-size: 28px;
+    }
+    
+    .about-card, .skill-card {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    .project-info {
+        padding: 20px;
+    }
+    
+    .project-info h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero-text h1 {
+        font-size: 24px;
+    }
+    
+    .profile-circle {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .section-header h2 {
+        font-size: 24px;
+    }
+    
+    .project-techs {
+        flex-wrap: wrap;
+    }
+}
