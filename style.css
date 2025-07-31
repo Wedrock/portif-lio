@@ -592,9 +592,7 @@ footer {
     }
 }
 
-/* Adicione estas regras ao seu CSS */
 
-/* Esconde o menu desktop em mobile */
 @media (max-width: 768px) {
     .desktop-nav {
         display: none;
@@ -605,7 +603,6 @@ footer {
     }
 }
 
-/* Mostra o botão do menu mobile */
 .mobile-menu-btn {
     display: none;
     font-size: 32px;
@@ -623,7 +620,6 @@ footer {
     }
 }
 
-/* Estilos para o menu mobile */
 .mobile-nav {
     position: fixed;
     top: 0;
@@ -673,7 +669,6 @@ footer {
     padding: 0;
 }
 
-/* Overlay quando o menu está aberto */
 .mobile-nav-overlay {
     position: fixed;
     top: 0;
@@ -689,7 +684,6 @@ footer {
     display: block;
 }
 
-/* Ajuste no header quando o menu está aberto */
 body.menu-open {
     overflow: hidden;
 }
