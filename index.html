@@ -10,18 +10,15 @@
 </head>
 <body>
     <div class="container">
-        <!-- Vídeo de Fundo -->
         <video class="back-vid" autoplay loop muted playsinline>
             <source src="videos/galaxy.mp4" type="video/mp4">
         </video>
-
-        <!-- Cabeçalho -->
+        
         <header data-aos="fade-down">
             <div class="header-content">
                 <div class="logo">
                     <h1><span>João Pedro</span> D'Anjour</h1>
                 </div>
-
                 <nav class="desktop-nav">
                     <ul>
                         <li><a href="#about">Sobre</a></li>
@@ -29,21 +26,17 @@
                         <li><a href="#projects">Projetos</a></li>
                     </ul>
                 </nav>
-
                 <div class="social-icons">
                     <a href="https://github.com/Wedrock"><i class='bx bxl-github'></i></a>
                     <a href="https://www.linkedin.com/"><i class='bx bxl-linkedin'></i></a>
                     <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
                 </div>
             </div>
-
-            <!-- Botão do Menu Mobile -->
             <div class="mobile-menu-btn">
                 <i class='bx bx-menu'></i>
             </div>
         </header>
 
-        <!-- Menu Mobile -->
         <nav class="mobile-nav">
             <ul>
                 <li><a href="#about">Sobre</a></li>
@@ -56,9 +49,8 @@
                 </li>
             </ul>
         </nav>
+        
         <div class="mobile-nav-overlay"></div>
-
-        <!-- Seção Hero -->
         <section class="hero" id="home" data-aos="fade">
             <div class="hero-content">
                 <div class="hero-text" data-aos="fade-right">
@@ -72,8 +64,7 @@
                 </div>
             </div>
         </section>
-
-        <!-- Seção Sobre -->
+        
         <section class="about-section" id="about">
             <div class="section-header" data-aos="fade-up">
                 <h2>Sobre Mim</h2>
@@ -104,7 +95,6 @@
             </div>
         </section>
 
-        <!-- Seção Habilidades -->
         <section class="skills-section" id="skills">
             <div class="section-header" data-aos="fade-up">
                 <h2>Minhas Habilidades</h2>
@@ -144,14 +134,12 @@
             </div>
         </section>
 
-        <!-- Seção Projetos -->
         <section class="projects-section" id="projects">
             <div class="section-header" data-aos="fade-up">
                 <h2>Meus Projetos</h2>
                 <div class="divider"></div>
             </div>
             <div class="projects-container">
-                <!-- Prática 1 -->
                 <div class="project-card" data-aos="fade-up">
                     <div class="project-media">
                         <video loop muted playsinline>
@@ -170,8 +158,6 @@
                         </a>
                     </div>
                 </div>
-
-                <!-- Prática 2 -->
                 <div class="project-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="project-media">
                         <video loop muted playsinline>
@@ -190,8 +176,6 @@
                         </a>
                     </div>
                 </div>
-
-                <!-- Prática 3 -->
                 <div class="project-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="project-media">
                         <video loop muted playsinline>
@@ -211,8 +195,6 @@
                         </a>
                     </div>
                 </div>
-
-                <!-- Prática 4 -->
                 <div class="project-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="project-media">
                         <video loop muted playsinline>
@@ -232,8 +214,6 @@
                         </a>
                     </div>
                 </div>
-
-                <!-- Prática 5 -->
                 <div class="project-card" data-aos="fade-up" data-aos-delay="400">
                     <div class="project-media">
                         <video loop muted playsinline>
@@ -255,8 +235,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- Rodapé -->
         <footer>
             <div class="footer-content">
                 <div class="footer-info" data-aos="fade-up">
@@ -291,7 +269,6 @@
         </footer>
     </div>
 
-    <!-- Scripts -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -304,7 +281,6 @@
 
             });
             
-            // Configura o IntersectionObserver para os vídeos
             const videoObserver = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
@@ -315,13 +291,11 @@
                 });
             }, { threshold: 0.5 });
 
-            // Observa todos os vídeos dos projetos
             document.querySelectorAll('.project-media video').forEach(video => {
                 video.setAttribute('muted', '');
                 videoObserver.observe(video);
             });
 
-            // Controle do menu mobile
             const menuBtn = document.querySelector('.mobile-menu-btn');
             const mobileNav = document.querySelector('.mobile-nav');
             const overlay = document.querySelector('.mobile-nav-overlay');
@@ -341,12 +315,10 @@
             menuBtn.addEventListener('click', toggleMenu);
             overlay.addEventListener('click', closeMenu);
             
-            // Fechar o menu ao clicar em um link
             document.querySelectorAll('.mobile-nav a').forEach(link => {
                 link.addEventListener('click', closeMenu);
             });
 
-            // Ajuste responsivo do padding do hero
             function adjustHeroPadding() {
                 const header = document.querySelector('header');
                 const hero = document.querySelector('.hero');
@@ -359,7 +331,6 @@
                 }
             }
 
-            // Debounce para o evento resize
             let resizeTimeout;
             function handleResize() {
                 clearTimeout(resizeTimeout);
@@ -368,7 +339,6 @@
                 }, 100);
             }
 
-            // Inicialização
             adjustHeroPadding();
             window.addEventListener('resize', handleResize);
         });
